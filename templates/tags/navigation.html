@@ -5,9 +5,7 @@
 		{% if user.is_authenticated %}
 			<a href="{% url django.contrib.auth.views.logout %}">Logout</a>
 		{% else %}
-			<a href="{% url register %}">Sign Up</a>
+			<a href="{% url register %}">Sign Up/Login</a>
 	</li>
-	<li>
-			<a href="{% url django.contrib.auth.views.login %}">Login</a>
 		{% endif %}
-	</li>
+	
